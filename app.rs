@@ -79,6 +79,8 @@ impl eframe::App for TemplateApp {
                 self.value += 1.0;
             }
 
+            ui.label(format!("We would have said another hello, but we just want to showcase your input above: '{:?}'", self.value));
+
             ui.separator();
 
             ui.add(egui::github_link_file!(
